@@ -1,27 +1,32 @@
-# AnglarSample
+# Angular Application =]
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.3.
+Repositório com uma arquitetura completa base utilizando Angular
 
-## Development server
+## Exemplo da Aplicação
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+O exemplo da release mais recente está publicado nop link abaixo:
 
-## Code scaffolding
+[Exemplo da Aplicação Publicado](https://angular-app-52771.firebaseapp.com/pt-br/dashboard)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Funcionalidades Suportadas
 
-## Build
+Segue abaixo as funcionalidades suportadas pela aplicação:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+| Funcionalidade                                            | Status        |
+| :---------------------------------------------------------|:-------------:|
+| Suporte à multi-ambiente (desenvolvimento e produção)     | Concluído     |
+| Suporte a compiladores de estilo SCSS                     | Concluído     |
+| Lazy-Loading                                              | Concluído     |
+| AOT                                                       | Concluído     |
+| Internationalization (i18n)                               | Concluído     |
+| Localization (l10n)                                       | Concluído     |
+| Suporta à UI Material Design                              | Concluído     |
 
-## Running unit tests
+## Bibliotecas de Terceiros
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- [Angular Material](https://material.angular.io)
+- [Flex Layout](https://github.com/angular/flex-layout)
 
-## Running end-to-end tests
+## Wiki
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Dicas e tutoriais para utilizar a aplicação pode ser encontrada na [Wiki](wiki/indice.md)

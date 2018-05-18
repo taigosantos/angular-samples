@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+
+  constructor(){
+    let number = 0;
+    number = 1;
+
+    console.log(number);
+  }
 }
