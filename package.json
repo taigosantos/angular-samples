@@ -2,12 +2,16 @@
   "name": "anglar-sample",
   "version": "0.0.0",
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
+    "i18n": "ng xi18n --output-path src/locales",
+    "dev:pt-br": "ng serve --aot --i18n-file=src/locales/messages.pt-BR.xlf --locale=pt-BR",
+    "dev:en-us": "ng serve --aot --i18n-file=src/locales/messages.en-US.xlf --locale=en-US",
+    "prod:pt-br": "ng serve --prod --aot --i18n-file=src/locales/messages.pt-BR.xlf --locale=pt-BR",
+    "prod:en-us": "ng serve --prod --aot --i18n-file=src/locales/messages.en-US.xlf --locale=en-US",
+    "build:pt-br": "ng build --output-path=dist/pt-br --aot -prod --bh /pt-br/ --i18n-file=src/locales/messages.pt-BR.xlf --locale=pt-BR",
+    "build:en-us": "ng build --output-path=dist/en-us --aot -prod --bh /en-us/ --i18n-file=src/locales/messages.en-US.xlf --locale=en-US",
+    "build": "npm run build:pt-br && npm run build:en-us",
+    "deploy": "firebase deploy",
+    "start": "ng serve"
   },
   "private": true,
   "dependencies": {
@@ -20,7 +24,10 @@
     "@angular/platform-browser": "^6.0.2",
     "@angular/platform-browser-dynamic": "^6.0.2",
     "@angular/router": "^6.0.2",
+    "@mdi/font": "^2.3.54",
     "core-js": "^2.5.4",
+    "font-awesome": "^4.7.0",
+    "mdi": "^2.2.43",
     "rxjs": "^6.0.0",
     "zone.js": "^0.8.26"
   },
